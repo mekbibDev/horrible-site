@@ -16,7 +16,7 @@ spanWords.forEach((spanWord) => {
       "transform",
       `translate(${Math.floor(
         Math.random() * window.innerWidth
-      )}px, ${Math.floor(Math.random() * window.innerWidth)}px)`
+      )}px, ${Math.floor(Math.random() * window.innerHeight)}px)`
     );
   }, Math.floor(Math.random() * 2000));
 });
