@@ -5,7 +5,7 @@ const body = document.querySelector("body");
 storyWords.forEach((word) => {
   const span = document.createElement("span");
   span.textContent = word;
-  span.style.setProperty("transition", "transform 2s");
+  span.style.setProperty("transition", "transform 2s, color 2s");
   body.append(span);
 });
 
@@ -18,5 +18,10 @@ spanWords.forEach((spanWord) => {
         Math.random() * window.innerWidth
       )}px, ${Math.floor(Math.random() * window.innerHeight)}px)`
     );
+    spanWord.style.setProperty("color", `#${getRandomColor()}`);
   }, Math.floor(Math.random() * 2000));
 });
+
+function getRandomColor() {
+  return Math.floor(Math.random() * 16777215).toString(16);
+}
