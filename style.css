@@ -1,9 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-span {
-  position: absolute;
+body {
+  background-color: black;
+}
+header {
+  color: white;
+  text-align: center;
 }
